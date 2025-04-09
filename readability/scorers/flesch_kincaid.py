@@ -12,7 +12,7 @@ class Result:
 
 
 class FleschKincaid:
-    def __init__(self, stats, min_words=100):
+    def __init__(self, stats, min_words=5):
         self._stats = stats
         if stats.num_words < min_words:
             raise ReadabilityException('{} words required.'.format(min_words))
